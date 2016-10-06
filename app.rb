@@ -9,4 +9,8 @@ class Webserver < Sinatra::Base
     'Hey, you found the secret route!'
   end
 
+  get '/cat' do
+    erb(:index)
+  end
+
 end
